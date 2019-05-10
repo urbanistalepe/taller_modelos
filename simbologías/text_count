@@ -1,0 +1,6 @@
+
+Etiqueta que cuenta lo que intersecta.
+
+aggregate ( 'estacionamientos' , 'count' , $id, filter:= intersects ( $geometry, geometry (@parent) ))  
+
+
