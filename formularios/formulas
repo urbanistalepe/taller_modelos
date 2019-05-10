@@ -1,0 +1,14 @@
+
+/*Para convertir los valores de personal ocupado a número en denue */
+
+CASE
+WHEN "per_ocu" = '0 a 5 personas' THEN '2.5'
+WHEN "per_ocu" = '6 a 10 personas' THEN '8'
+WHEN "per_ocu" = '11 a 30 personas' THEN '20.5'
+WHEN "per_ocu" = '31 a 50 personas' THEN '40.5'
+WHEN "per_ocu" = '51 a 100 personas'  THEN '75.5'
+WHEN "per_ocu" = '101 a 250 personas'   THEN '175.5'
+WHEN "per_ocu" = '251 y más personas'    THEN '376.5'
+ELSE
+''
+END
